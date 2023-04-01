@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Dex Progress</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- SOME CSS code (just a little, plese don't count off!  I know the better way to do it is make a seprate file!) -->
+    <style>
+    #obtained {
+        opacity: 0.3;
+    }
+    #obtained:hover {
+        opacity: 1.0;
+    }
+    body {
+        position: relative; 
+    }
+    table {
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn {
+        background-color: #ac2836; 
+        border-color:#ee5d6c;
+    }
+    a {
+        color: aliceblue;
+    }
+    </style>
+</head>
+
+<!-- Navigation bar that scrolls to specified parts of the page: -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  
+<nav class="navbar navbar-expand-sm sticky-top" style="background-color: #ac2836; border-color:#ee5d6c;" fixed-top>
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#goal">My Goal</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#neededmons">Missing Mons</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#vivillon">Vivillon</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- 'My Goals' Scrolls To: -->
+  <div id="goal" class="container-fluid" style="padding:20px 20px;">
+    </div>
+    <!-- Paragraph about My Goal -->
+    <div class="col-sm-11">
+    <h1>My Goal</h1>
+    <p>As a collector and life-long Pokemon fan it should seem obvious that my ultimate goal is to "catch 'em all".   
+    I am so close to my goal that I can almost count the number of Pokemon left on one hand!  Not only doing a living Dex, 
+    I am also doing an alternate forms living Dex.  I have most alternate gender forms already and I'm getting rather close with my Vivillon Patterns.
+    I am still missing some miscellaneous alternate forms but I am slowly working through some older games to obtain them.
+    I haven't started much on my Pikachu Hat or Alcremie hunts but I will be starting those after I finish the base Dex.
+    </p>
+    <br>
+    <p>If you would like to see a full report of my progress towards my goal, please feel free to visit my full spreadsheet that I do keep up-to-date on a regular basis!</p>
+    <br>
+    </p><a class="btn" href="https://docs.google.com/spreadsheets/d/16S4O-W-A3KZqBHvJG0YdEiYIx5AdhbVZ53uMBb_i6uc/edit?usp=sharing" role="button" style="">Full Progress SpreadSheet</a>
+    <br>
+    <br>
+    <br>
+    <p>I am NOT attempting a shiny Dex at this time but I do have a variety of shinies that I can trade if you're going after them!</p>
+    <br>
+    <br>
+    </div>
+  </div>  
+
+  
+<!-- 'Missing Mons' Scrolls To: -->
+  <div id="neededmons" class="container-fluid" style="padding-top: 50px; padding-bottom: 200px;">
+    <h1>Missing Mons</h1>
+    <br>
+    <!-- Base Living Dex Progress -->
+    <div id="progBar" class="container-fluid">
+        <div class="progress" style="height: 25px;">
+            <div class="progress-bar" style="width:99%; background-color: #ac2836";>
+                Progress: 99.2%
+            </div>
+            <div class="progress-bar" style="width:1%; background-color:#ee5d6c;">
+            </div>
+        </div>
+    </div>
+    <!-- Pokemon Needed Table -->
+    <div class="container-fluid overflow-auto"  style="height: 600px;">
+    <table class="table table-sm table-borderless">
+        <thead>
+            <tr>
+                <th scope="col">Obtained</th>
+                <th scope="col">Image</th>
+                <th scope="col">Pokemon</th>
+                <th scope="col">Where to Obtain</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        I have this Pokemon!
+                    </button>
+                </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/pokemon/images/a/a9/772Type-_Null.png/revision/latest?cb=20161221215653" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Type: Null</td>
+                <td><p>Sun / Moon - GIFT</p>
+                    <p>Ultra Sun / Ultra Moon - GIFT</p>
+                    <p>Sword / Shield - GIFT</p>
+                </td>
+            </tr>
+            <tr>
+            <th scope="row">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    I have this Pokemon!
+                </button>
+            </th>
+                <td>
+                        <img src="https://static.wikia.nocookie.net/pokemon/images/e/e5/803Poipole.png/revision/latest?cb=20180707005858" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Poipole</td>
+                <td>
+                    <p>Ultra Sun / Ultra Moon - GIFT</p>
+                    <p>Sword / Shield - DLC </p>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        I have this Pokemon!
+                    </button>
+                </th>
+                    <td>
+                        <img src="https://static.wikia.nocookie.net/pokemon/images/a/a7/807Zeraora.png/revision/latest/scale-to-width-down/1000?cb=20200731140857" class="rounded mx-auto d-block" style="width: 10rem">
+                    </td>
+                    <td>Zeraora</td>
+                    <td><p>Ultra Sun / Ultra Moon - EVENT ONLY</p>
+                        <p>Sword / Shield - EVENT ONLY</p>
+                    </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        I have this Pokemon!
+                    </button>
+                </th>
+                    <td>
+
+                        <img src="https://static.wikia.nocookie.net/pokemon/images/4/47/891Kubfu.png/revision/latest/scale-to-width-down/1000?cb=20200627083339" class="rounded mx-auto d-block" style="width: 10rem">
+                    </td>
+                    <td>Kubfu</td>
+                    <td>Sword / Shield - DLC</td>
+                </tr>
+            <tr>
+            <th scope="row">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    I have this Pokemon!
+                </button>
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/pokemon/images/a/a5/893Zarude.png/revision/latest?cb=20201016112812" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Zarude</td>
+                <td>Sword / Shield - EVENT ONLY</td>
+            </tr>
+            <tr>
+            <th scope="row">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    I have this Pokemon!
+                </button>
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/pokemon/images/b/b0/Pokemon_regieleki_2x.png/revision/latest/scale-to-width-down/1000?cb=20200627082441" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Regieleki</td>
+                <td>Sword / Shield - DLC</td>
+            </tr>
+        </tbody>
+      </table>
+  </div>
+  </div>
+
+  <!-- 'Vivillon' Scrolls To: -->
+  <div id="vivillon" class="container-fluid" style="padding-bottom: 200px">
+    <h1>Vivillon</h1>
+    <br>
+    <!-- Progress Bar for Vivillon -->
+    <div id="progBar" class="container-fluid">
+        <div class="progress" style="height: 25px;">
+            <div class="progress-bar" style="width:70%; background-color:#ac2836;">
+                Progress: 70%
+            </div>
+            <div class="progress-bar" style="width:30%; background-color:#ee5d6c;">
+            </div>
+        </div>
+    </div>
+    <!-- Table showing ISO Vivillons -->
+    <div class="container-fluid overflow-auto"  style="height: 600px;">
+    <table class="table table-sm table-borderless">
+        <thead>
+            <tr>
+                <th scope="col">Obtained</th>
+                <th scope="col">Pattern Image</th>
+                <th scope="col">Pattern Name</th>
+                <th scope="col">Where to Obtain</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    ✅
+                </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/poohadventures/images/7/76/666Vivillon-Archipelago.png/revision/latest?cb=20210403101045" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Archipelago</td>
+                <td>Caribbean, South Africa</td>
+            </tr>
+            <tr>
+            <th scope="row">
+                ✅
+            </th>
+                <td>
+                        <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/4/47/666.6-Vivillon_%28Continental%29.png/revision/latest?cb=20190426135557" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Continental</td>
+                <td>Argentina, Germany, Poland, Denmark, Central Asia, India</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    ✅
+                </th>
+                    <td>
+                        <img src="https://static.wikia.nocookie.net/ultimate-pokemon-fanon/images/7/7e/Vivillon-Elegant.png/revision/latest?cb=20140523135305" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                    </td>
+                    <td>Elegant</td>
+                    <td>Japan</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    ✅
+                </th>
+                    <td>
+
+                        <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/5/58/666.3-Vivillon_%28Fancy%29.png/revision/latest/scale-to-width-down/1000?cb=20190426135503" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                    </td>
+                    <td>Fancy</td>
+                    <td>No Postcard Availible - auto spawn in S/V</td>
+                </tr>
+            <tr>
+            <th scope="row">
+                ✅
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/6/68/666.4-Vivillon_%28Garden%29.png/revision/latest?cb=20190426135522" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Garden</td>
+                <td>United Kingdom, Ireland, New Zealand</td>
+            </tr>
+            <tr>
+            <th scope="row">
+                ✅
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/7/7b/666.7-Vivillon_%28High_Plains%29.png/revision/latest?cb=20190426135624" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>High Plains</td>
+                <td>Western USA</td>
+            </tr>
+            <tr>
+            <th scope="row">
+                ✅
+            </th>
+                <td>
+                    <img src="https://archives.bulbagarden.net/media/upload/8/87/0666Vivillon-Icy_Snow.png" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Icy Snow</td>
+                <td>Greenland, Northern Canada, Norway, Finland, Sweden</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                ✅
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/2/2f/666.19-Vivillon_%28Jungle%29.png/revision/latest?cb=20190426140030" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Jungle</td>
+                <td>Colombia, Northern South America, Central Africa, Indonesia</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                ✅
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/9/96/666.5-Vivillon_%28Marine%29.png/revision/latest?cb=20190426135539" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Marine</td>
+                <td>Chile, Greece, Eastern Europe</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    I have this Pattern!
+                </button>
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/0/02/666.1-Vivillon_%28Meadow%29.png/revision/latest?cb=20190426135425" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Meadow</td>
+                <td>France and Spain</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                ✅
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/5/51/666.9-Vivillon_%28Modern%29.png/revision/latest?cb=20190426135707" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Modern</td>
+                <td>Eastern USA</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    I have this Pattern!
+                </button>
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/d/d0/666.13-Vivillon_%28Monsoon%29.png/revision/latest?cb=20190426135819" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Monsoon</td>
+                <td>Southeast Asia</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                ✅
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/7/73/666.16-Vivillon_%28Ocean%29.png/revision/latest?cb=20190426135924" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Ocean</td>
+                <td>Hawaii, Galápagos Islands, Madagascar</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    I have this Pattern!
+                </button>
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/3/3e/666.20-Vivillon_%28Pok%C3%A9ball%29.png/revision/latest/scale-to-width-down/1000?cb=20190426140048" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Pokeball</td>
+                <td>Special Online Distribution Event (2014)</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                ✅
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/5/52/666.11-Vivillon_%28Polar%29.png/revision/latest?cb=20190426135744" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Polar</td>
+                <td>Alaska, Eastern Canada, Western Canada, Southern Argentina and Chile, Norway, Sweden, Finland</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                ✅
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/3/3a/666.15-Vivillon_%28River%29.png/revision/latest?cb=20190426135904" id="obtained" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>River</td>
+                <td>Egypt, South Africa, South Australia</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    I have this Pattern!
+                </button>
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/9/93/666.10-Vivillon_%28Sandstorm%29.png/revision/latest?cb=20190426135724" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Sandstorm</td>
+                <td>Middle East</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    I have this Pattern!
+                </button>
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/6/69/666.18-Vivillon_%28Savanna%29.png/revision/latest?cb=20190426140005" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Savanna</td>
+                <td>Brazil</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    I have this Pattern!
+                </button>
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/d/df/666.17-Vivillon_%28Sun%29.png/revision/latest?cb=20190426135946" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Sun</td>
+                <td>North Australia, Mexico, Madagascar</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    I have this Pattern!
+                </button>
+            </th>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/4/4e/666.12-Vivillon_%28Tundra%29.png/revision/latest?cb=20190426135800" class="rounded mx-auto d-block" style="width: 10rem">
+                </td>
+                <td>Tundra</td>
+                <td>Iceland, Southern Norway, Sweden, North Japan</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  </div>
+
+  <!-- Code for form that users can fill out to contact me -->
+  <div class="offcanvas offcanvas-start" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">How would you like to help?</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form  action="mailto:owllyssa@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="usr">Name</label>
+                <input type="Name" class="form-control" id="nameinput" placeholder="Ash Ketchum">
+                <label for="eemailinput">E-mail</label>
+                    <input type="email" class="form-control" id="emailinput" placeholder="name@example.com">
+                <label for="frdcodeinput">Friend-Code</label>
+                    <input type="friendcode" class="form-control" id="frdcodeinput" placeholder="0000-0000-0000">
+            </div>
+            <div class="form-group">
+              <label for="selection">How would you like to send your Mon?</label>
+              <select class="form-control" id="selection">
+                <option>Select One</option>
+                <option>Trade - Sword / Shield</option>
+                <option>Trade - Scarlet / Violet</option>
+                <option>Trade - Pokemon HOME</option>
+                <option>Pokemon GO</option>
+                <option>Pokemon GO Postcard (Vivillon)</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="txtarea">Please include any other comments:</label>
+                <textarea class="form-control" id="txtarea" rows="3" placeholder="If you're wishing to trade, please include what mon you're in search of"></textarea>
+              </div>
+              <br>
+        <button class="btn btn-info" type="submit" value="Submit">Send</button>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #ee5d6c; border: solid; border-color:aliceblue; fixed-bottom">
+    <center><p>All images provided and hosted by <a href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki">Pokemon Wiki</a></p></center>
+</div>
+
+</body>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</html>
